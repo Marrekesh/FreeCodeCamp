@@ -231,3 +231,51 @@ myArrayq[0] = 45
 
 const myArrayr = [["John", 23], ["cat", 2]];
 const removedFromMyArray = myArrayr.pop()
+
+//Create a function called reusableFunction which prints the string Hi World to the dev console.
+
+function reusableFunction() {
+    console.log('Hi World')
+  }
+  
+  reusableFunction()
+
+  // Using let or const, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
+  const myGlobal = 10
+const oopsGlobal = 5
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  const myGlobal = 5
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+//Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+
+let processed = 0;
+processed = processArg(7)
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+//Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+
+function nextInLine(arr, item) {
+    // Only change code below this line
+    arr.push(item)
+    const variable = arr.shift()
+    return variable;
+    // Only change code above this line
+  }
