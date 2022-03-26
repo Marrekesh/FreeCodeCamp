@@ -279,3 +279,87 @@ function nextInLine(arr, item) {
     return variable;
     // Only change code above this line
   }
+
+  // Добавьте в указанную строку оператор равенства, чтобы функция возвращала строку , Equalкогда valона эквивалентна 12.
+
+  function testEqual(val) {
+    if (val == 12) { // Change this line
+      return "Equal";
+    }
+    return "Not Equal";
+  }
+  
+  testEqual(10);
+
+  // Add the less than or equal to operator to the indicated lines so that the return statements make sense.
+
+  function testLessOrEqual(val) {
+    if (val <= 12) {  // Change this line
+      return "Smaller Than or Equal to 12";
+    }
+  
+    if (val <= 24) {  // Change this line
+      return "Smaller Than or Equal to 24";
+    }
+  
+    return "More Than 24";
+  }
+  
+  testLessOrEqual(10);
+
+  // Write a switch statement which tests val and sets answer for the following conditions:
+
+  function caseInSwitch(val) {
+    let answer = "";
+    // Only change code below this line
+    switch(val) {
+      case 1 :
+        answer = 'alpha';
+        break;
+      case 2 :
+        answer = 'beta';
+        break;
+      case 3 :
+        answer = 'gamma';
+        break;
+      case 4 :
+        answer = 'delta';
+        break;   
+    }
+  
+  
+    // Only change code above this line
+    return answer;
+  }
+  
+  caseInSwitch(1);
+
+  // Change the chained if/else if statements into a switch statement.
+
+  function chainToSwitch(val) {
+    let answer = "";
+    // Only change code below this line
+  
+    switch(val) {
+      case "bob" :
+        answer = "Marley";
+        break;
+      case 42 :
+        answer = "The Answer";
+        break;
+      case 1 :
+        answer = "There is no #1";
+        break;
+      case 99 :
+        answer = "Missed me by this much!";
+        break;
+      case 7 :
+        answer = "Ate Nine";
+        break;   
+    }
+  
+    // Only change code above this line
+    return answer;
+  }
+  
+  chainToSwitch(7);
