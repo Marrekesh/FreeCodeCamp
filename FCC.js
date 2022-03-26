@@ -135,3 +135,99 @@ let c = 33;
 a /= 12;
 b /= 4;
 c /= 11;
+
+//Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
+//I am a "double quoted" string inside "double quotes".
+
+const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+
+
+// Build myStr from the strings This is the start. and This is the end. using the + operator. Be sure to include a space between the two strings.
+
+const myString =  "This is the start. " + "This is the end.";
+
+// Создайте myStrнесколько строк, соединив эти две строки: This is the first sentence.и This is the second sentence.используя +=оператор.
+
+let myString1 = "This is the first sentence";
+myStr += " This is the second sentence"
+
+// Set myName to a string equal to your name and build myStr with myName between the strings My name is and and I am well!
+
+const myName = "Dima";
+const myStrg = "My name is" + myName + "and I am well";
+
+// Set someAdjective to a string of at least 3 characters and append it to myStr using the += operator.
+
+const someAdjective = "wery well";
+let myStrinh = "Learning to code is ";
+
+myStr += someAdjective
+
+// Use the .length property to count the number of characters in the lastName variable and assign it to lastNameLength.
+
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
+
+// Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
+// Setup
+let firstLetterOfLastName = "";
+const lastNames = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+
+//Correct the assignment to myStr so it contains the string value of Hello World using the approach shown in the example above.
+
+
+let myStrl = "Jello World";
+
+myStrl = "Hello World"; 
+
+console.log(myStrl[0])
+
+
+//Let's try to set thirdLetterOfLastName to equal the third letter of the lastName variable using bracket notation.
+
+const lastNamese = "Lovelace";
+
+const thirdLetterOfLastName = lastNamese[2]; // Change this line
+
+//Use bracket notation to find the last character in the lastName variable.
+
+const lastNamer = "Lovelace";
+const lastLetterOfLastName = lastNamer[lastNamer.length - 1]; 
+
+// Use bracket notation to find the second-to-last character in the lastName string.
+
+
+const lastNamea = "Lovelace";
+const secondToLastLetterOfLastName = lastNamea[lastNamea.length - 2]; 
+
+
+//You will need to use the string concatenation operator + to build a new string, using the provided variables: myNoun, myAdjective, myVerb, and myAdverb.
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb; // Change this line
+// Only change code above this line
+
+//Modify the new array myArray so that it contains both a string and a number (in that order).
+
+const myArray = ["peanut butter", 5];
+
+//Modify the data stored at index 0 of myArray to a value of 45.
+
+const myArrayq = [18, 64, 99];
+myArrayq[0] = 45
+
+//Use the .pop() function to remove the last item from myArray and assign the popped off value to a new variable, removedFromMyArray.
+
+const myArrayr = [["John", 23], ["cat", 2]];
+const removedFromMyArray = myArrayr.pop()
