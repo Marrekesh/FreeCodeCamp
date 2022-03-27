@@ -426,3 +426,87 @@ function phoneticLookup(val) {
     // Only change code above this line
     return result;
   }
+
+  function checkObj(obj, checkProp) {
+    // Only change code below this line
+    if (obj.hasOwnProperty(checkProp)) {
+        console.log(obj.checkProp)
+      return obj[checkProp]
+    } 
+    return "Not Found";
+    
+    // Only change code above this line
+  }
+
+  console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"))
+
+  // You start with an updateRecords function that takes an object literal, records, containing the musical album collection, an id, a prop (like artist or tracks), and a value. Complete the function using the rules below to modify the object passed to the function.
+
+  // Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+  function updateRecords(records, id, prop, value) {
+
+    if (prop !== 'tracks' && value !== '') {
+      records[id][prop] = value
+      return records;
+    }  
+    
+    if (prop === 'tracks' && !records[id]['tracks']) {
+      records[id]['tracks'] = []
+      records[id]['tracks'].push(value)
+      return records;
+    }  
+
+    if (prop === 'tracks' && value !== '') {
+      records[id]['tracks'].push(value)
+      return records;
+    }  
+
+    if (value === '') {
+      delete records[id][prop]
+      return records;
+    }
+
+  }
+
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+//Use a for loop to push the values 1 through 5 onto myArray.
+
+// Setup
+const myArraya = [];
+
+// Only change code below this line
+for (let i = 1; i <= 5; i++) {
+  myArraya.push(i);
+}
+
+// Push the odd numbers from 1 through 9 to myArray using a for loop.
+
+// Setup
+const myArrays = [];
+
+// Only change code below this line
+for (let i = 1; i < 10; i += 2) {
+  myArrays.push(i);
+}
