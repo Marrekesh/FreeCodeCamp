@@ -44,3 +44,34 @@ const PI = freezeObj();
 const magic = () => new Date()
 
 
+// Перепишите myConcatфункцию, которая добавляет содержимое arr2к arr1, чтобы она использовала синтаксис стрелочной функции.
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+  
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+//Modify the function sum using the rest parameter in such a way that the function sum is able to take any number of arguments and return their sum.
+
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+}
+
+// Copy all contents of arr1 into another array arr2 using the spread operator.
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];  // Change this line
+
+console.log(arr2);
+
+// Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables today and tomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+  };
+
+  
+  const { today, tomorrow} = HIGH_TEMPERATURES
+
