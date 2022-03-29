@@ -249,3 +249,16 @@ stringFunctions.lowercaseString("WORLD!");
 export default function subtract(x, y) {
   return x - y;
 }
+
+// In the following code, import the default export from the math_functions.js file, found in the same directory as this file. Give the import the name subtract.
+
+import subtract from "./math_functions.js";
+// Only change code above this line
+
+subtract(7,4);
+
+// Create a new promise called makeServerRequest. Pass in a function with resolve and reject parameters to the constructor.
+const makeServerRequest = new Promise((resolve, reject) => {
+  
+})
+
