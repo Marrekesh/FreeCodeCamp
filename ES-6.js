@@ -152,3 +152,36 @@ function makeList(arr) {
 }
 
 const failuresList = makeList(result.failure);
+
+// Use object property shorthand with object literals to create and return an object with name, age and gender properties.
+
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return {
+    name,
+    age,
+    gender
+  };
+  // Only change code above this line
+};
+
+// Refactor the function setGear inside the object bicycle to use the shorthand syntax described above.
+
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+// The Vegetable class allows you to create a vegetable object with a property name that gets passed to the constructor.
+class Vegetable {
+  constructor(name) {
+    this.name = name
+  }
+}
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
