@@ -185,3 +185,46 @@ class Vegetable {
 
 const carrot = new Vegetable('carrot');
 console.log(carrot.name); // Should display 'carrot'
+
+
+//
+
+class Thermostat {
+  constructor(temperatureF) {
+    this._temperatureF = temperatureF
+
+  }
+
+  get temperature() {  
+    return 5 / 9 * (this.__temperatureF - 32)
+  }
+
+  set temperature(updateTemperatureF) {
+    this._temperatureF = updateTemperatureF
+  }
+}
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+console.log(temp)
+// temp = thermos.temperature; // 26 in Celsius
+
+// Add a script to the HTML document of type module and give it the source file of index.js
+<html>
+  <body>
+    <!-- Only change code below this line -->
+    <script type="module" src="index.js"></script>
+    <!-- Only change code above this line -->
+  </body>
+</html>
+
+// There are two string-related functions in the editor. Export both of them using the method of your choice.
+
+export const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+ export const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
