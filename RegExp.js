@@ -100,3 +100,19 @@ let result = quoteSample.match(alphabetRegexV2).length;
 let movieName = "2001: A Space Odyssey";
 let numRegex = /\d/g; // Change this line
 let result = movieName.match(numRegex).length;
+
+// Используйте класс сокращенных символов для нецифр \D, чтобы подсчитать, сколько нецифр в названиях фильмов.
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;
+
+//Измените регулярное выражение userCheck, чтобы оно соответствовало перечисленным выше ограничениям.
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let result = userCheck.test(username);
+
+//Измените регулярное выражение countWhiteSpaceдля поиска нескольких пробельных символов в строке.
+
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result = sample.match(countWhiteSpace);
