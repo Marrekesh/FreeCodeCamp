@@ -72,3 +72,26 @@ let result = chewieQuote.match(chewieRegex);
 let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*?>/ig; // Change this line
 let result = text.match(myRegex);
+
+// Напишите жадное регулярное выражение, которое находит одного или нескольких преступников в группе других людей. Преступника изображают с большой буквы C.
+let reCriminals = /C+/g; // Change this line
+
+// Используйте символ вставки в регулярном выражении для поиска Calтолько в начале строки rickyAndCal.
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
+
+// Используйте символ вставки в регулярном выражении для поиска Calтолько в начале строки rickyAndCal.
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
+
+//Используйте символ привязки ( $) для сопоставления строки cabooseв конце строки caboose.
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
+
+// Используйте класс сокращенных символов \wдля подсчета количества буквенно-цифровых символов в различных кавычках и строках.
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
