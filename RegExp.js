@@ -95,3 +95,8 @@ let result = lastRegex.test(caboose);
 let quoteSample = "The five boxing wizards jump quickly.";
 let alphabetRegexV2 = /\w/g; // Change this line
 let result = quoteSample.match(alphabetRegexV2).length;
+
+//Используйте класс сокращенных символов \dдля подсчета количества цифр в названиях фильмов. Выписанные цифры ("шесть" вместо 6) не засчитываются.
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result = movieName.match(numRegex).length;
