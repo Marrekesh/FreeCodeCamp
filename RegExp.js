@@ -30,3 +30,21 @@ console.log(res)
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/; // Change this line
 let result = unRegex.test(exampleStr);
+
+// Use a character class with vowels (a, e, i, o, u) in your regex vowelRegex to find all the vowels in the string quoteSample.
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result = quoteSample.match(vowelRegex); // Change this line
+
+// Match all the letters in the string quoteSample.
+
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[A-z]/ig; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line
+
+// Создайте одно регулярное выражение, которое соответствует диапазону букв между hи sи диапазону чисел между 2и 6. Не забудьте включить соответствующие флаги в регулярное выражение.
+
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
