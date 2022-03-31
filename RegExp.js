@@ -48,3 +48,27 @@ let result = quoteSample.match(alphabetRegex); // Change this line
 let quoteSample = "Blueberry 3.141592653s are delicious.";
 let myRegex = /[h-s2-6]/ig; // Change this line
 let result = quoteSample.match(myRegex); // Change this line
+
+// Create a single regex that matches all characters that are not a number or a vowel. Remember to include the appropriate flags in the regex.
+
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/ig; // Change this line
+let result =quoteSample.match(myRegex) ; // Change this line
+
+// Вы хотите найти совпадения, когда буква sвстречается один или несколько раз в Mississippi. Напишите регулярное выражение, использующее +знак.
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g; // Change this line
+let result = difficultSpelling.match(myRegex);
+
+//
+
+// Only change code below this line
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+
+let result = chewieQuote.match(chewieRegex);
+
+// Исправьте регулярное выражение /<.*>/, чтобы оно возвращало тег HTML, <h1>а не текст "<h1>Winter is coming</h1>". Помните, что подстановочный знак .в регулярном выражении соответствует любому символу.
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/ig; // Change this line
+let result = text.match(myRegex);
