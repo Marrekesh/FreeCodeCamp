@@ -139,3 +139,19 @@ let result = ohRegex.test(ohStr);
 let timStr = "Timmmmber";
 let timRegex = /Tim{4}ber/gi; // Change this line
 let result = timRegex.test(timStr);
+
+//Измените регулярное выражение favRegex, чтобы оно соответствовало версии слова в американском английском ( favorite) и британском английском ( favourite).
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);
+
+//Используйте просмотр вперед pwRegexдля сопоставления паролей, длина которых превышает 5 символов и состоит из двух последовательных цифр.
+
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
+
+// Исправьте регулярное выражение, чтобы оно проверяло имена Franklin Rooseveltили Eleanor Rooseveltс учетом регистра и делало уступки для отчества.
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor).*Roosevelt/; // Change this line
+let result = myRegex.test(myString); // Change this line
