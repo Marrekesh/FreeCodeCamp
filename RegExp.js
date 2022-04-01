@@ -116,3 +116,26 @@ let result = userCheck.test(username);
 let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g; // Change this line
 let result = sample.match(countWhiteSpace);
+
+// Измените регулярное выражение countNonWhiteSpace, чтобы оно искало в строке несколько символов, отличных от пробелов.
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);
+
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\s/no/; // Change this line
+let result = ohStr.match(ohRegex);
+
+console.log(result)
+
+//Измените регулярное выражение ohRegex, чтобы оно соответствовало всей фразе Oh noтолько тогда, когда она 3должна 6содержать буквы h.
+
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6}\sno/ig; // Change this line
+let result = ohRegex.test(ohStr);
+
+// Измените регулярное выражение timRegex, чтобы оно соответствовало слову, Timberтолько если оно состоит из четырех букв m.
+
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/gi; // Change this line
+let result = timRegex.test(timStr);
