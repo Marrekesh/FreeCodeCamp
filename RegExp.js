@@ -155,3 +155,15 @@ let result = pwRegex.test(sampleWord);
 let myString = "Eleanor Roosevelt";
 let myRegex = /(Franklin|Eleanor).*Roosevelt/; // Change this line
 let result = myRegex.test(myString); // Change this line
+
+//Напишите регулярное выражение, fixRegexиспользуя три группы захвата, которые будут искать каждое слово в строке one two three. Затем обновите replaceTextпеременную, заменив one two threeее строкой, three two oneи присвойте результат resultпеременной. Убедитесь, что вы используете группы захвата в строке замены, используя $синтаксис знака доллара ( ).
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let result = str.replace(fixRegex, replaceText);
+
+//Напишите регулярное выражение и используйте соответствующие строковые методы для удаления пробелов в начале и конце строк
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
