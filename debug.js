@@ -99,4 +99,34 @@ function myFunc() {
     }
   }
 
-  g
+// Мы определили переменную с именем yourArray. yourArrayЗавершите оператор, назначив переменной массив длиной не менее 5 элементов . Ваш массив должен содержать по крайней мере одну строку , одно число и одно логическое значение .
+let yourArray = [1, 'mama', false, 1, 'mama',]; // Change this line
+
+// Чтобы выполнить эту задачу, установите 2-ю позицию (индекс 1) myArrayна что угодно, кроме буквы b.
+
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = '2'
+// Only change code above this line
+console.log(myArray);
+
+// Мы определили функцию mixedNumbers, которой мы передаем массив в качестве аргумента. Измените функцию, используя push()и unshift()для добавления 'I', 2, 'three'в начало массива и 7, 'VIII', 9в конец, чтобы возвращаемый массив содержал представления чисел от 1 до 9 по порядку.
+function mixedNumbers(arr) {
+  // Only change code below this line
+  arr.unshift('I', 2, 'three')
+  arr.push(7, 'VIII', 9)
+  // Only change code above this line
+  return arr;
+}
+
+console.log(mixedNumbers(['IV', 5, 'six']));
+
+// Мы определили функцию popShift, которая принимает массив в качестве аргумента и возвращает новый массив. Измените функцию, используя pop()и shift(), чтобы удалить первый и последний элементы массива аргументов и присвоить удаленные элементы соответствующим переменным, чтобы возвращаемый массив содержал их значения.
+function popShift(arr) {
+  let popped = arr.pop(); // Change this line
+  let shifted = arr.shift(); // Change this line
+  return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
