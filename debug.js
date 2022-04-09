@@ -27,3 +27,14 @@ let receivables = 10;
 let payables = 8;
 let netWorkingCapital = receivables - payables;
 console.log(`Net working capital is: ${netWorkingCapital}`);
+
+// Исправьте две парные ошибки в коде.
+
+let myArray = [1, 2, 3];
+let arraySum = myArray.reduce((previous, current) =>  previous + current);
+console.log(`Sum of array values is: ${arraySum}`);
+
+// Исправьте строку, чтобы она либо использовала другие кавычки для hrefзначения, либо экранировала существующие. Держите двойные кавычки вокруг всей строки.
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
+console.log(innerHtml);
+
