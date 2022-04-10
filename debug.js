@@ -171,3 +171,27 @@ function copyMachine(arr, num) {
 
 console.log(copyMachine([true, false, true], 2));
 
+// Мы определили функцию spreadOut, которая возвращает переменную sentence. Измените функцию с помощью оператора распространения так, чтобы она возвращала массив ['learning', 'to', 'code', 'is', 'fun'].
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; // Change this line
+  return sentence;
+}
+
+console.log(spreadOut());
+
+// indexOf()может быть невероятно полезным для быстрой проверки наличия элемента в массиве. Мы определили функцию quickCheck, которая принимает массив и элемент в качестве аргументов. Измените функцию с помощью indexOf()так, чтобы она возвращала trueзначение, если переданный элемент существует в массиве, и falseесли его нет.
+function quickCheck(arr, elem) {
+  // Only change code below this line
+  if (arr.indexOf(elem) != -1) {
+    return true 
+  } else {
+    return false
+  }
+
+  
+   
+  // Only change code above this line
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
