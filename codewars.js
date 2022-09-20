@@ -122,3 +122,12 @@ function findOdd(A) {
 }
 
 console.log(findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]))
+
+function sumArray(array) {
+    if (array.length <= 2) return 0
+    if(arr === null) return 0
+
+    return array.sort((a, b) => a - b).slice(1, array.length - 1).reduce((prev, next) => prev + next, 0)
+}
+
+console.log(sumArray([ -6, -20,]))
