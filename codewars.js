@@ -97,3 +97,28 @@ function fun(text) {
 
 console.log(fun("The sunset sets at twelve o' clock."))
 
+function findOdd(A) {
+    
+
+    const counterObj = {}
+
+    for (let i of A) {
+        if (i in counterObj) {
+            counterObj[i]++
+        } else {
+            counterObj[i] = 1
+        }
+    }
+
+
+    for (let key in counterObj) {
+        if (counterObj[key] % 2 !== 0) {
+            return +key
+        }
+    }
+
+    return +A[0]
+    
+}
+
+console.log(findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]))
