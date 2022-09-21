@@ -203,3 +203,9 @@ function smash(words) {
 
     return words.join(' ').trim() 
  };
+
+ function smash(words) {
+    if (words.length === 0) return ''
+
+    return words.join(' ').trim() 
+ };
