@@ -155,3 +155,9 @@ function smash(words) {
  };
 
  console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+
+ function booleanToString(b){
+    return String(b)  
+}
+
+console.log(typeof false)
