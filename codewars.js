@@ -161,3 +161,11 @@ function smash(words) {
 }
 
 console.log(typeof false)
+
+function makeUpperCase(str) {
+    return str.toUpperCase()
+  }
+
+  function repeatStr (n, s) {
+    return s.repeat(n);
+  }
