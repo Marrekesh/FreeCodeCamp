@@ -197,3 +197,9 @@ function reverse(str){
 }
 
 console.log(reverse('Hello  world'))
+
+function smash(words) {
+    if (words.length === 0) return ''
+
+    return words.join(' ').trim() 
+ };
