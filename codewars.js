@@ -131,3 +131,19 @@ function sumArray(array) {
 }
 
 console.log(sumArray([ -6, -20,]))
+
+function findShort(s){
+    let otvet = 99999
+    let arr = s.split(' ')
+
+    for (let word of arr) {
+        if (word.length < otvet) {
+            otvet = word.length
+        }
+    }
+
+    return otvet
+
+}
+
+console.log(findShort("Let's travel abroad shall we"))
