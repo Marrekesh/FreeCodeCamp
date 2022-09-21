@@ -147,3 +147,11 @@ function findShort(s){
 }
 
 console.log(findShort("Let's travel abroad shall we"))
+
+function smash(words) {
+    if (words.length === 0) return ''
+
+    return words.join(' ').trim() 
+ };
+
+ console.log(smash(['hello', 'world', 'this', 'is', 'great']))
