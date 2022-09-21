@@ -177,3 +177,9 @@ function repeatStr (n, s) {
 function booleanToString(b){
     return String(b)  
 }
+
+function smash(words) {
+    if (words.length === 0) return ''
+
+    return words.join(' ').trim() 
+ };
