@@ -228,3 +228,9 @@ function sumArray(array) {
 
     return array.sort((a, b) => a - b).slice(1, array.length - 1).reduce((prev, next) => prev + next, 0)
 }
+
+function smash(words) {
+    if (words.length === 0) return ''
+
+    return words.join(' ').trim() 
+ };
