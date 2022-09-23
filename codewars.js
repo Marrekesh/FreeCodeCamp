@@ -221,3 +221,10 @@ function smash(words) {
 
     return otv.join(' ')
 }
+
+function sumArray(array) {
+    if (array.length <= 2) return 0
+    if(arr === null) return 0
+
+    return array.sort((a, b) => a - b).slice(1, array.length - 1).reduce((prev, next) => prev + next, 0)
+}
