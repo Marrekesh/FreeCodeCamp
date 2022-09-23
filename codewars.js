@@ -209,3 +209,15 @@ function smash(words) {
 
     return words.join(' ').trim() 
  };
+
+ function reverse(str){
+    const otv = []
+    str = str.split(' ')
+
+    for (let word of str) {
+        const prom = word.split('').reverse().join('')
+        otv.push(prom)
+    }
+
+    return otv.join(' ')
+}
