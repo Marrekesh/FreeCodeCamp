@@ -238,3 +238,7 @@ function smash(words) {
  function repeatStr (n, s) {
     return s.repeat(n);
 }
+
+function makeUpperCase(str) {
+    return str.toUpperCase()
+}
