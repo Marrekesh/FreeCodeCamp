@@ -234,3 +234,7 @@ function smash(words) {
 
     return words.join(' ').trim() 
  };
+
+ function repeatStr (n, s) {
+    return s.repeat(n);
+}
